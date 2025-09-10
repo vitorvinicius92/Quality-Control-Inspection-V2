@@ -476,6 +476,7 @@ if menu == "Nova RNC":
     blob = settings_get_logo()
     if blob:
         st.image(Image.open(io.BytesIO(blob)), width=160)
+         st.markdown("<br>", unsafe_allow_html=True) 
 
     with st.form("form_rnc"):
         col0, col1, col2 = st.columns(3)
